@@ -6,3 +6,398 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+/* Main Style */
+
+$main-color: yellow;
+$accent-color: orange;
+
+@mixin header-style {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 70px;
+  color: $accent-color;
+  text-shadow: 3px 3px 0px white;
+}
+
+body {
+  font-family: "Meiryo UI", $font-family-base;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#top {
+  background: url("../img/circuit.jpg");
+  background-size: 100% 100%;
+  height: 800px;
+
+  $nav-height: 50px;
+  $nav-sm-height: $nav-height * 12;
+
+  nav {
+    $nav-font-color: $accent-color;
+
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px darken($accent-color, 10%);
+    background: $main-color;
+    height: $nav-height;
+    opacity: 0.9;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+
+    @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+      height: $nav-sm-height;
+      width: 100%;
+      padding: 0px;
+    }
+
+    ul {
+      list-style: none;
+
+      @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+        padding: 0px;
+      }
+
+      li {
+        width: 20%;
+        cursor: pointer;
+        line-height: $nav-height;
+
+        &:first-of-type {
+          display: none;
+        }
+
+        @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+          width: 100%;
+          box-shadow: 0px 0px 1px black;
+          line-height: $nav-height * 2;
+          font-size: 40px;
+          display: none;
+
+          &:first-of-type {
+            display: block;
+          }
+        }
+
+        a {
+          display: block;
+          width: 100%;
+          color: $nav-font-color;
+          text-decoration: none;
+
+          &:hover {
+            color: $nav-font-color;
+          }
+          &:visited {
+            color: $nav-font-color;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    padding-top: 200px;
+
+    @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+      padding-top: 200px + 70px;
+    }
+
+
+    p {
+      font-size: 50px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 3px 3px 0px darken($main-color, 20%);
+
+      &:last-of-type {
+        margin-top: 40px;
+      }
+    }
+    h1 {
+      @include header-style;
+    }
+  }
+}
+
+#about {
+  height: 700px;
+  background: #008F00;
+  color: white;
+
+  @media screen and (min-width: 0px) and (max-width: $container-md), (min-width: 0px) and (max-device-width: $container-sm) {
+    height: 1230px;
+  }
+
+  h2 {
+    @include header-style;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+  }
+  p {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+  }
+  .acounts {
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+
+    @media screen and (min-width: 0px) and (max-width: $container-md), (min-width: 0px) and (max-device-width: $container-sm) {
+      margin-top: 70px;
+    }
+
+    &:last-of-type {
+      margin-top: 60px;
+    }
+
+    a {
+      text-shadow: none;
+      color: white;
+      font-size: 170px;
+      line-height: 200px;
+      transition: transform 0.3s linear;
+
+      &:hover {
+        transform: rotateY(360deg);
+        text-shadow: 5px 5px 10px black;
+      }
+    }
+  }
+}
+
+#work {
+  height: 780px;
+  background: adjust-lightness($main-color, 20%);
+  color: black;
+
+  @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+    height: 1000px;
+  }
+
+
+  h2 {
+    @include header-style;
+  }
+  h3 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px white;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      font-size: 20px;
+
+      span {
+        span {
+          margin: 0px 40px;
+        }
+        .first-tilda {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .thumbnail {
+    $img-height: 200px;
+
+    span {
+      position: absolute;
+      line-height: $img-height;
+      height: $img-height;
+      color: black;
+      text-shadow: 2px 2px 3px white;
+      font-weight: bold;
+      font-size: 22px;
+      background: #eee;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+    img {
+      height: $img-height;
+    }
+  }
+}
+
+#skill {
+  background: #FFCFB1;
+  padding-bottom: 60px;
+
+  h2 {
+    @include header-style;
+  }
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px white;
+  }
+  .panel-group {
+    .panel-title, .panel-body, .list-group {
+      font-size: 20px;
+    }
+    .panel {
+      @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+        margin: 15px 0px;
+      }
+      .panel-title {
+        font-weight: bold;
+        line-height: 20px;
+
+        @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+          font-size: 40px;
+          line-height: 45px;
+        }
+        a {
+          display: block;
+          width: 100%;
+          text-decoration: none;
+
+          i {
+            padding-left: 10px;
+          }
+        }
+      }
+      .list-group-item span {
+        display: inline-block;
+        width: $container-md / 12 * 3;
+        font-weight: bold;
+
+        @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .license {
+    padding: 24px 10px;
+    font-size: 20px;
+    border-radius: 0px;
+    background: white;
+
+    @media screen and (min-width: 0px) and (max-width: $container-sm), (min-width: 0px) and (max-device-width: $container-sm){
+      margin-bottom: 0px;
+    }
+  }
+}
+
+#contact {
+  background: #66CCFF;
+  padding-bottom: 60px;
+  font-size: 20px;
+
+  h2 {
+    @include header-style;
+  }
+  p {
+    margin-top: 30px;
+  }
+  .error-panel {
+    display: none;
+  }
+  .mail-form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 0px;
+    box-shadow: 10px 10px 1px #555;
+
+    .input-group {
+      width: 100%;
+      margin: 20px 0px;
+
+      label {
+        font-weight: normal;
+
+        .error-msg {
+          margin-left: 30px;
+          color: #FF5050;
+        }
+      }
+
+      .form-control {
+        z-index: 0;
+        border-radius: 4px;
+      }
+    }
+
+    textarea {
+      height: 200px;
+      resize: none;
+    }
+  }
+  .send-btn {
+    button {
+      font-size: 20px;
+      width: 100%;
+      box-shadow: 5px 5px 1px #555;
+      background: #FFEAFF;
+
+      &:hover {
+        background: #FFD6FF;
+      }
+      &:focus {
+        background: #FFC6FF;
+        box-shadow: 2px 2px 1px #555;
+      }
+    }
+  }
+  .send-anime {
+    $fa-size: 40px;
+
+    margin-top: 20px;
+
+    div {
+      border-radius: $fa-size / 2;
+    }
+
+    .left-fa {
+      width: $fa-size;
+      height: $fa-size;
+      float: left;
+
+      i {
+        position: relative;
+      }
+    }
+    .right-fa {
+      width: $fa-size;
+      height: $fa-size;
+      float: right;
+
+      .fa-home {
+        z-index: 1;
+      }
+      .fa-heart {
+        position: absolute;
+        z-index: 0;
+        color: red;
+        display: none;
+      }
+    }
+  }
+}
+
+footer {
+  background: #333;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+}

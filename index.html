@@ -4,17 +4,286 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="vieport" content="width=device-width, initial-scale=1" />
-    <title>Japaan.jp</title>
+    <meta description="専門学校HAL東京の学生（2016年卒）、近藤雅希が作ってみたポートフォリオサイトです。私についての説明文やこれまでの制作物を載せています。" />
+    <title>Japaan.jp | 専門学生、近藤雅希のポートフォリオサイト</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/font-awesome/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/lightbox/dist/css/lightbox.css" />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/lightbox/dist/js/lightbox.min.js"></script>
     <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <script src="js/script.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-64802522-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
-    <h1>
-      Hello World はろーわーるど
-    </h1>
+    <div id="top">
+      <nav class="container">
+        <ul>
+          <li class="col-sm-12 text-center">
+            <a href=""><i class="fa fa-align-justify"></i></a>
+          </li>
+          <li class="col-sm-12 text-center">
+            <a href="#top">TOP</a>
+          </li>
+          <li class="col-sm-12 text-center">
+            <a href="#about">About</a>
+          </li>
+          <li class="col-sm-12 text-center">
+            <a href="#work">Work</a>
+          </li>
+          <li class="col-sm-12 text-center">
+            <a href="#skill">Skill</a>
+          </li>
+          <li class="col-sm-12 text-center">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container content">
+        <p class="text-center">
+          WELCOME TO
+        </p>
+        <h1 class="text-center">
+          Japaan.jp!
+        </h1>
+        <p class="text-center">
+          Trust Me, I'm an Engineer...
+        </p>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <h2 class="text-center">
+          About
+        </h2>
+        <h3 class="col-md-7">
+          自己紹介
+        </h3>
+        <p class="col-md-7 about-body">
+          ご覧いただきありがとうございます。近藤雅希と申します。<br />HAL東京という専門学校で情報系の勉強をしております。<br /><br />主に、Webサイトの制作に取り組んでます。<br />Androidもちょっとできます。<br />前まではサーバーサイドを書くことが多かったのですが、<br />最近はJavaScriptがんばってます。<br /><br />デザインは、得意ではありません…
+        </p>
+        <h3 class="col-md-7">
+          Japaan.jpについて
+        </h3>
+        <p class="col-md-7">
+          ドメインがとれたのでこのサイト名になりました。
+        </p>
+        <div class="text-center acounts">
+          Facebookアカウント<br /><a href="https://www.facebook.com/profile.php?id=100007483848230" target="_blank"><i class="fa fa-facebook-official"></i></a>
+        </div>
+        <div class="text-center acounts">
+          Githubアカウント<br /><a href="https://github.com/conn-do" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="work">
+      <div class="container">
+        <h2 class="text-center">
+          Work
+        </h2>
+        <h3>
+          経歴
+        </h3>
+        <ul class="list-group">
+          <li class="row list-group-item">
+            <span class="col-sm-6">2012年4月<span class="first-tilda">～</span>現在</span><span class="col-sm-6">専門学校HAL東京に在学中（4年生）</span>
+          </li>
+          <li class="row list-group-item">
+            <span class="col-sm-6">2012年冬<span>～</span>2014年春</span><span class="col-sm-6">PCリプレースやPC設定のアルバイトをする</span>
+          </li>
+          <li class="row list-group-item">
+            <span class="col-sm-6">2014年春<span>～</span>2014年秋</span><span class="col-sm-6">プログラマのアルバイトをする</span>
+          </li>
+          <li class="row list-group-item">
+            <span class="col-sm-6">2014年10月</span><span class="col-sm-6">WEB系の会社にインターンをする</span>
+          </li>
+        </ul>
+        <h3>
+          制作物
+        </h3>
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <a class="thumbnail" href="./img/japaan-old.jpg" data-lightbox="products" data-title="旧ポートフォリオサイト"><span class="text-center">旧ポートフォリオサイト</span><img src="./img/japaan-old.jpg" /></a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a class="thumbnail" href="./img/hackathon.png" data-lightbox="products" data-title="スマートフォンゲーム"><span class="text-center">スマートフォンゲーム</span><img src="./img/hackathon.png" /></a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a class="thumbnail" href="./img/hew1.jpg" data-lightbox="products" data-title="コミュニティサイト"><span class="text-center">コミュニティサイト</span><img src="./img/hew1.jpg" /></a>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <a class="thumbnail" href="./img/hew2.jpg" data-lightbox="products" data-title="ゲームダウンロードサイト"><span class="text-center">ダウンロードサイト</span><img src="./img/hew2.jpg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="skill">
+      <div class="container">
+        <h2 class="text-center">
+          Skill
+        </h2>
+        <h3>
+          今までにやったことがあるもの
+        </h3>
+        <div class="row">
+          <div class="panel-group" id="programming" role="tablist" aria-multiselectable="false">
+            <div class="panel panel-warning">
+              <div class="panel-heading" id="serverHeading" role="tab">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#programming" href="#serverCollapse" aria-expanded="true" aria-controles="serverCollapse">サーバサイド<i class="fa fa-angle-down"></i></a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse in" id="serverCollapse" role="tabpanel" aria-labelledby="serverHeading">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span>PHP</span>MVCフレームワーク（SymfonyやCakePHP）を使ったコーディング
+                  </li>
+                  <li class="list-group-item">
+                    <span>WordPress</span>テーマ作成や機能のカスタマイズ
+                  </li>
+                  <li class="list-group-item">
+                    <span>Java</span>Servletを使用したWebサイト作成
+                  </li>
+                  <li class="list-group-item">
+                    <span>Ruby</span>Ruby on Railsを使用したWebアプリケーション作成
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading" id="frontHeading" role="tab">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#programming" href="#frontCollapse" aria-expanded="true" aria-controles="frontCollapse">フロントエンド<i class="fa fa-angle-down"></i></a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="frontCollapse" role="tabpanel" aria-labelledby="frontHeading">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span>HTML</span>テンプレートエンジン(Slim)を使用したHTML5コーディング
+                  </li>
+                  <li class="list-group-item">
+                    <span>CSS</span>Sass(scss)を使ったCSS3コーディング
+                  </li>
+                  <li class="list-group-item">
+                    <span>JavaScript</span>AltJS(TypeScript)やJavaScript Flamework(jQueryやAngularJS)を使用したコーディング
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading" id="designHeading" role="tab">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#programming" href="#designCollapse" aria-expanded="true" aria-controles="designCollapse">デザイン<i class="fa fa-angle-down"></i></a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="designCollapse" role="tabpanel" aria-labelledby="designHeading">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span>Photoshop Illustrator</span>画像の加工や、簡単な素材の作成。（絵は描けません）
+                  </li>
+                  <li class="list-group-item">
+                    <span>スマートフォン向けサイト</span>レスポンシブデザインを使用したサイトの作成
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="panel panel-warning">
+              <div class="panel-heading" id="otherHeading" role="tab">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#programming" href="#otherCollapse" aria-expanded="true" aria-controles="otherCollapse">その他プログラミング言語<i class="fa fa-angle-down"></i></a>
+                </h4>
+              </div>
+              <div class="panel-collapse collapse" id="otherCollapse" role="tabpanel" aria-labelledby="otherHeading">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <span>Android</span>簡単なスマートフォンアプリ
+                  </li>
+                  <li class="list-group-item">
+                    <span>C言語</span>簡単なコンソールアプリケーション
+                  </li>
+                  <li class="list-group-item">
+                    <span>C#</span>簡単なフォームアプリケーション
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3>
+            資格
+          </h3>
+          <div class="well well-lg col-md-3 col-sm-6 text-center license">
+            基本情報技術者試験
+          </div>
+          <div class="well well-lg col-md-3 col-sm-6 text-center license">
+            情報検定 1級
+          </div>
+          <div class="well well-lg col-md-3 col-sm-6 text-center license">
+            Webデザイナー検定 エキスパート
+          </div>
+          <div class="well well-lg col-md-3 col-sm-6 text-center license">
+            柔道 初段
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <h2 class="text-center">
+          Contact
+        </h2>
+        <p class="col-md-10 col-md-offset-1 well">
+          Japaan.jpでは、ご意見・ご質問、暇つぶしから応援メッセージまで、何でも募集しております。<br>ぜひ、気軽にお問い合わせください。</br>
+        </p>
+        <div class="col-md-10 col-md-offset-1 error-panel">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <div class="panel-title">
+                送信エラー
+              </div>
+            </div>
+            <ul class="list-group"></ul>
+          </div>
+        </div>
+        <form action="sendMail.php" method="post">
+          <div class="col-md-8 col-md-offset-2 well mail-form">
+            <div class="input-group">
+              <label for="mail-input"><span>メールアドレス</span></label><br /><input class="form-control" id="mail-input" type="text" name="mail" />
+            </div>
+            <div class="input-group">
+              <label for="title-input"><span>タイトル</span></label><br /><input class="form-control" id="title-input" type="text" name="title" />
+            </div>
+            <div class="input-group">
+              <label for="body-input"><span>本文</span></label><br /><textarea class="form-control" id="body-input" name="body" placeholder="500文字以内で入力してください"></textarea>
+            </div>
+          </div>
+          <div class="col-md-8 col-md-offset-2 row send-anime">
+            <div class="left-fa">
+              <i class="fa fa-pencil fa-2x"></i>
+            </div>
+            <div class="right-fa">
+              <i class="fa fa-home fa-2x"></i><i class="fa fa-heart fa-2x"></i>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center send-btn">
+            <button class="btn btn-lg btn-default">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container text-center">
+        &copy; 2015 - Japaan.jp All Rights Reserved
+      </div>
+    </footer>
   </body>
 </html>

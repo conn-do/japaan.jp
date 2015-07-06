@@ -147,6 +147,10 @@
 // $btn-default-bg:                 #fff
 // $btn-default-border:             #ccc
 
+// $btn-default-color:              #333
+// $btn-default-bg:                 #fff
+// $btn-default-border:             #ccc
+
 // $btn-primary-color:              #fff
 // $btn-primary-bg:                 $brand-primary
 // $btn-primary-border:             darken($btn-primary-bg, 5%)
@@ -199,6 +203,7 @@
 
 //** Border color for inputs on focus
 // $input-border-focus:             #66afe9
+$input-border-focus:             pink;
 
 //** Placeholder text color
 // $input-color-placeholder:        #999
