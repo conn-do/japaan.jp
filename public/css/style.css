@@ -1,25 +1,30 @@
-/* --------------------------------------------------------------------------
-   japaan.jp — ライト基調・モダンカード
-   -------------------------------------------------------------------------- */
+/* japaan.jp — ライト基調・モダンカード */
 
 :root {
+    /* 背景・サーフェス */
     --bg-deep: #f6f8fc;
     --bg: #f9fbff;
-    --bg-elevated: #ffffff;
     --surface: rgba(255, 255, 255, 0.92);
-    --surface-solid: #ffffff;
+
+    /* ボーダー */
     --border: rgba(27, 43, 65, 0.08);
     --border-strong: rgba(27, 43, 65, 0.14);
+
+    /* テキスト */
     --text: #1d2a3b;
     --text-muted: #5e6c80;
+
+    /* アクセント */
     --accent: #ff7f6e;
-    --accent-dim: #e06655;
     --accent-glow: rgba(255, 127, 110, 0.22);
     --gold: #e3a93e;
+
+    /* 形状 */
     --radius-lg: 18px;
     --radius-md: 12px;
     --radius-sm: 10px;
-    --shadow-card: 0 24px 48px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--border);
+
+    /* タイポグラフィ */
     --font-sans: "Noto Sans JP", system-ui, sans-serif;
     --font-display: "Outfit", var(--font-sans);
 }
@@ -106,9 +111,7 @@ a:visited {
     color: inherit !important;
 }
 
-/* --------------------------------------------------------------------------
-   ヒーロー
-   -------------------------------------------------------------------------- */
+/* ヒーロー */
 
 .site-hero {
     position: relative;
@@ -135,6 +138,8 @@ a:visited {
 
 .hero-geo {
     position: absolute;
+    top: var(--y);
+    left: var(--x);
     opacity: 0.3;
     box-sizing: border-box;
 }
@@ -179,171 +184,6 @@ a:visited {
     border-radius: 2px;
     background: rgba(42, 61, 87, 0.4);
     border: none;
-}
-
-.hero-geo--p1 {
-    top: 14%;
-    left: 9%;
-}
-
-.hero-geo--p2 {
-    top: 68%;
-    left: 88%;
-}
-
-.hero-geo--p3 {
-    top: 42%;
-    left: 4%;
-}
-
-.hero-geo--p4 {
-    top: 22%;
-    left: 72%;
-}
-
-.hero-geo--p5 {
-    top: 82%;
-    left: 18%;
-}
-
-.hero-geo--p6 {
-    top: 10%;
-    left: 52%;
-}
-
-.hero-geo--p7 {
-    top: 58%;
-    left: 58%;
-}
-
-.hero-geo--p8 {
-    top: 36%;
-    left: 38%;
-}
-
-.hero-geo--p9 {
-    top: 6%;
-    left: 28%;
-}
-
-.hero-geo--p10 {
-    top: 16%;
-    left: 94%;
-}
-
-.hero-geo--p11 {
-    top: 50%;
-    left: 20%;
-}
-
-.hero-geo--p12 {
-    top: 54%;
-    left: 80%;
-}
-
-.hero-geo--p13 {
-    top: 90%;
-    left: 44%;
-}
-
-.hero-geo--p14 {
-    top: 72%;
-    left: 7%;
-}
-
-.hero-geo--p15 {
-    top: 28%;
-    left: 16%;
-}
-
-.hero-geo--p16 {
-    top: 64%;
-    left: 91%;
-}
-
-.hero-geo--p17 {
-    top: 8%;
-    left: 78%;
-}
-
-.hero-geo--p18 {
-    top: 44%;
-    left: 11%;
-}
-
-.hero-geo--p19 {
-    top: 84%;
-    left: 68%;
-}
-
-.hero-geo--p20 {
-    top: 62%;
-    left: 34%;
-}
-
-.hero-geo--p21 {
-    top: 3%;
-    left: 64%;
-}
-
-.hero-geo--p22 {
-    top: 96%;
-    left: 36%;
-}
-
-.hero-geo--p23 {
-    top: 24%;
-    left: 2%;
-}
-
-.hero-geo--p24 {
-    top: 71%;
-    left: 13%;
-}
-
-.hero-geo--p25 {
-    top: 12%;
-    left: 96%;
-}
-
-.hero-geo--p26 {
-    top: 88%;
-    left: 56%;
-}
-
-.hero-geo--p27 {
-    top: 33%;
-    left: 89%;
-}
-
-.hero-geo--p28 {
-    top: 58%;
-    left: 3%;
-}
-
-.hero-geo--p29 {
-    top: 47%;
-    left: 97%;
-}
-
-.hero-geo--p30 {
-    top: 95%;
-    left: 78%;
-}
-
-.hero-geo--p35 {
-    top: 74%;
-    left: 26%;
-}
-
-.hero-geo--p38 {
-    top: 46%;
-    left: 7%;
-}
-
-.hero-geo--p41 {
-    top: 86%;
-    left: 39%;
 }
 
 .hero-geo--delay {
@@ -393,6 +233,25 @@ a:visited {
 
     .hero-geo--track-d {
         animation: hero-geo-drift-d 35s linear infinite;
+    }
+
+    .site-hero__blob--1 {
+        animation: hero-blob-drift-a 20s ease-in-out infinite alternate;
+    }
+
+    .site-hero__blob--2 {
+        animation: hero-blob-drift-b 26s ease-in-out infinite alternate;
+    }
+
+    .fv-reveal {
+        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation-delay: var(--fv-delay, 0s);
+    }
+
+    .site-hero__title.fv-reveal {
+        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+            hero-title-shine 14s ease-in-out infinite;
+        animation-delay: var(--fv-delay, 0s), 0s;
     }
 }
 
@@ -500,16 +359,6 @@ a:visited {
     background: radial-gradient(circle, rgba(100, 140, 255, 0.18) 0%, transparent 70%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .site-hero__blob--1 {
-        animation: hero-blob-drift-a 20s ease-in-out infinite alternate;
-    }
-
-    .site-hero__blob--2 {
-        animation: hero-blob-drift-b 26s ease-in-out infinite alternate;
-    }
-}
-
 @keyframes hero-blob-drift-a {
     0% {
         transform: translate(0, 0) scale(1);
@@ -568,19 +417,6 @@ a:visited {
     filter: blur(4px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .fv-reveal {
-        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-        animation-delay: var(--fv-delay, 0s);
-    }
-
-    .site-hero__title.fv-reveal {
-        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards,
-            hero-title-shine 14s ease-in-out infinite;
-        animation-delay: var(--fv-delay, 0s), 0s;
-    }
-}
-
 @keyframes fv-fade-up {
     to {
         opacity: 1;
@@ -623,27 +459,7 @@ a:visited {
     }
 }
 
-.site-hero__lead {
-    font-size: 1.05rem;
-    color: var(--text-muted);
-}
-
-.site-hero__badge {
-    display: inline-block;
-    margin-right: 0.5rem;
-    padding: 0.2rem 0.55rem;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    vertical-align: middle;
-    color: #ffffff;
-    background: linear-gradient(135deg, var(--accent), #ff6b6b);
-    border-radius: 999px;
-}
-
-/* --------------------------------------------------------------------------
-   メイン・セクションカード
-   -------------------------------------------------------------------------- */
+/* メイン・セクションカード */
 
 .site-main {
     padding-bottom: 4rem;
@@ -707,23 +523,10 @@ a:visited {
     padding: 0;
 }
 
-.section-card__body--tight {
-    padding-top: 0;
-    border-top: 1px solid var(--border);
-    margin-top: 0;
-}
-
 .section-note {
     margin: 0;
     font-size: 0.875rem;
     color: var(--text-muted);
-}
-
-.subsection-title {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    color: var(--text);
 }
 
 .intro-text {
@@ -733,40 +536,7 @@ a:visited {
     color: var(--text);
 }
 
-.mono-nums {
-    font-variant-numeric: tabular-nums;
-    font-weight: 700;
-    color: var(--accent);
-}
-
-/* --------------------------------------------------------------------------
-   プレースホルダー
-   -------------------------------------------------------------------------- */
-
-.img-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 160px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(246, 250, 255, 0.9));
-    border: 1px dashed rgba(31, 55, 88, 0.22);
-    border-radius: var(--radius-md);
-    color: var(--text-muted);
-    font-size: 0.875rem;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.img-placeholder--portrait {
-    aspect-ratio: 3 / 4;
-    max-width: 280px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: var(--radius-lg);
-    box-shadow: 0 16px 32px rgba(52, 86, 139, 0.12);
-}
+/* 写真 */
 
 .hero-portrait {
     display: block;
@@ -788,25 +558,7 @@ a:visited {
     box-shadow: 0 8px 22px rgba(52, 86, 139, 0.14);
 }
 
-.img-placeholder--wide {
-    min-height: 200px;
-    border-radius: var(--radius-md);
-}
-
-.img-placeholder--icon {
-    width: 56px;
-    height: 56px;
-    min-height: 56px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    padding: 0.25rem;
-    border-radius: var(--radius-sm);
-    color: var(--text-muted);
-}
-
-/* --------------------------------------------------------------------------
-   スキルグリッド
-   -------------------------------------------------------------------------- */
+/* スキルグリッド */
 
 .skill-grid {
     display: grid;
@@ -828,11 +580,6 @@ a:visited {
     border-radius: var(--radius-md);
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(255, 248, 239, 0.95));
     border: 1px solid rgba(238, 137, 136, 0.28);
-    box-shadow: 0 4px 12px rgba(238, 137, 136, 0.08);
-}
-
-.skill-card:hover {
-    border-color: rgba(238, 137, 136, 0.28);
     box-shadow: 0 4px 12px rgba(238, 137, 136, 0.08);
 }
 
@@ -873,38 +620,7 @@ a:visited {
     text-shadow: 0 0 12px rgba(240, 193, 75, 0.25);
 }
 
-/* --------------------------------------------------------------------------
-   リスト・チップ
-   -------------------------------------------------------------------------- */
-
-.list-check {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.list-check li {
-    position: relative;
-    padding-left: 1.35rem;
-    margin-bottom: 0.85rem;
-    color: var(--text);
-}
-
-.list-check li:last-child {
-    margin-bottom: 0;
-}
-
-.list-check li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.55em;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), #ff5c5c);
-    box-shadow: 0 0 10px var(--accent-glow);
-}
+/* プロジェクト・経歴・ツール */
 
 .projects-lead {
     margin: 0;
@@ -939,12 +655,6 @@ a:visited {
     font-weight: 700;
     line-height: 1.6;
     color: #2c3a4e;
-}
-
-.project-item__desc {
-    font-size: 0.88rem;
-    line-height: 1.75;
-    color: var(--text-muted);
 }
 
 .project-item__stack {
@@ -1020,12 +730,6 @@ a:visited {
     box-shadow: 0 4px 12px rgba(238, 137, 136, 0.08);
 }
 
-.tool-item:hover {
-    border-color: rgba(238, 137, 136, 0.28);
-    box-shadow: 0 4px 12px rgba(238, 137, 136, 0.08);
-    transform: none;
-}
-
 .tool-item__icon {
     width: 2rem;
     height: 2rem;
@@ -1045,9 +749,7 @@ a:visited {
     color: var(--text);
 }
 
-/* --------------------------------------------------------------------------
-   お問い合わせ iframe
-   -------------------------------------------------------------------------- */
+/* お問い合わせ iframe */
 
 .contact-iframe {
     display: block;
@@ -1058,9 +760,7 @@ a:visited {
     border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 
-/* --------------------------------------------------------------------------
-   SNS
-   -------------------------------------------------------------------------- */
+/* SNS */
 
 .sns-grid {
     display: grid;
@@ -1111,9 +811,7 @@ a:visited {
     letter-spacing: 0.04em;
 }
 
-/* --------------------------------------------------------------------------
-   タイムライン
-   -------------------------------------------------------------------------- */
+/* タイムライン */
 
 .timeline {
     position: relative;
@@ -1183,10 +881,3 @@ a:visited {
     margin-bottom: 0;
 }
 
-/* --------------------------------------------------------------------------
-   Bootstrap 上書き（このページ内）
-   -------------------------------------------------------------------------- */
-
-body.site .text-muted {
-    color: var(--text-muted) !important;
-}
