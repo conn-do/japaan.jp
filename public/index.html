@@ -1,268 +1,413 @@
 <!doctype html>
 <html lang="ja">
-  <head>
+
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GMNHF9Y6H3"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-    gtag("config", "G-GMNHF9Y6H3");
+        gtag("config", "G-GMNHF9Y6H3");
     </script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:image" content="https://japaan.jp/img/logo.png">
+    <meta name="theme-color" content="#0c0f14">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,800&display=swap&subset=japanese" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
-    <title>Japaan.jp | 近藤のポートフォリオサイト</title>
-  </head>
-  <body>
-    <div class="header-wrap accent-color">
+    <title>Japaan.jp | 近藤 雅希 — Portfolio Site</title>
+</head>
+
+<body class="site">
+    <div class="site-header accent-bar">
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-12">
-                    がんばって仕事しますから！どうか何卒！
+                <div class="col-sm-12 site-header__inner">
+                    WEBエンジニア 近藤 雅希 Portfolio
                 </div>
             </div>
         </div>
     </div>
-    <div class="fv-wrap">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-8 col-md-4">
-                    <img class="img-fluid" src="/img/logo.png">
+
+    <header class="site-hero">
+        <div class="site-hero__noise" aria-hidden="true"></div>
+        <span class="site-hero__blob site-hero__blob--1" aria-hidden="true"></span>
+        <span class="site-hero__blob site-hero__blob--2" aria-hidden="true"></span>
+        <div class="site-hero__geos" aria-hidden="true">
+            <span class="hero-geo hero-geo--square hero-geo--track-a" style="--y:14%;--x:9%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--track-b" style="--y:68%;--x:88%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-d" style="--y:22%;--x:72%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-a hero-geo--delay" style="--y:82%;--x:18%"></span>
+            <span class="hero-geo hero-geo--square hero-geo--square-sm hero-geo--track-b hero-geo--delay"
+                style="--y:10%;--x:52%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--ring-sm hero-geo--track-d hero-geo--delay"
+                style="--y:36%;--x:38%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-b hero-geo--delay-sm" style="--y:6%;--x:28%"></span>
+            <span
+                class="hero-geo hero-geo--square hero-geo--square-sm hero-geo--track-c hero-geo--delay-xl hero-geo--rev"
+                style="--y:16%;--x:94%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-d hero-geo--delay-sm hero-geo--rev"
+                style="--y:54%;--x:80%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--track-a hero-geo--delay-xxl" style="--y:90%;--x:44%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-d hero-geo--delay-xl" style="--y:64%;--x:91%"></span>
+            <span class="hero-geo hero-geo--square hero-geo--track-b hero-geo--delay-lg hero-geo--rev"
+                style="--y:8%;--x:78%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--ring-sm hero-geo--track-a hero-geo--delay-md"
+                style="--y:44%;--x:11%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-c hero-geo--delay-xxl hero-geo--rev"
+                style="--y:84%;--x:68%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-c hero-geo--delay-md" style="--y:3%;--x:64%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--ring-sm hero-geo--track-a hero-geo--rev"
+                style="--y:96%;--x:36%"></span>
+            <span class="hero-geo hero-geo--square hero-geo--square-sm hero-geo--track-b hero-geo--delay-xl"
+                style="--y:24%;--x:2%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-a hero-geo--delay-xxl hero-geo--rev"
+                style="--y:12%;--x:96%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-b hero-geo--delay-md hero-geo--rev"
+                style="--y:33%;--x:89%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--track-d hero-geo--delay-sm" style="--y:47%;--x:97%"></span>
+            <span class="hero-geo hero-geo--square hero-geo--track-b hero-geo--delay-xxl hero-geo--rev"
+                style="--y:95%;--x:78%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-c hero-geo--delay-sm" style="--y:42%;--x:4%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--ring-sm hero-geo--track-d hero-geo--rev"
+                style="--y:58%;--x:58%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-a hero-geo--delay-md" style="--y:50%;--x:20%"></span>
+            <span class="hero-geo hero-geo--square hero-geo--square-sm hero-geo--track-b hero-geo--delay-lg"
+                style="--y:72%;--x:7%"></span>
+            <span class="hero-geo hero-geo--ring hero-geo--track-a hero-geo--rev" style="--y:74%;--x:26%"></span>
+            <span class="hero-geo hero-geo--dot hero-geo--track-a hero-geo--delay" style="--y:46%;--x:7%"></span>
+            <span class="hero-geo hero-geo--tri hero-geo--track-c hero-geo--delay-lg" style="--y:86%;--x:39%"></span>
+        </div>
+        <div class="container site-hero__content py-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <p class="site-hero__eyebrow mb-2 fv-reveal" style="--fv-delay: 0.08s">WEB Engineer</p>
+                    <h1 class="site-hero__title mb-3 fv-reveal" style="--fv-delay: 0.24s">近藤 雅希</h1>
+                </div>
+                <div class="col-md-5 col-lg-4 text-center fv-reveal" style="--fv-delay: 0.44s">
+                    <img src="/img/suite.jpg" alt="近藤 雅希のプロフィール写真" width="1122" height="1402"
+                        class="img-fluid hero-portrait" decoding="async" fetchpriority="high">
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col col-md-8">
-                    <h1 class="h3 text-center accent-color">
-                        近藤のポートフォリオサイトっぽいやつです！
-                    </h1>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <!-- 自己紹介 -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">自己紹介</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <p class="intro-text mb-3">
+                                東京を拠点に、フリーランスのWEBエンジニアとして活動しています。<br>
+                                NPO法人向けのシステム開発やホテル関連システムの開発に携わるほか、
+                                専門学校では非常勤講師としてプログラミング教育にも取り組んでいます。
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-        </div>
-    </div>
-    <div class="main-wrap">
-        <div class="container">
-            <div class="text-block">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-header">
-                        <h2 class="h4">自己紹介</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-content">
-                        <p>みなさんこんにちは、近藤雅希と申します。</p>
-                        <p>東京でWEBアプリケーションエンジニアやってるフリーランスです。</p>
-                        <p>主にNPO向けのシステム開発してます。<br>決済周りやGoogle Analytics、Salesforceとかの仕事が多いです。</p>
-                        <p>最近は専門学校で非常勤講師もやってます。</p>
-                        <p>好きな食べ物はからあげです。ただ最近はマラソンの練習してるのであまり食べてないです。好きな飲物はビールですが、最近は男梅サワーに浮気してます。</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-block">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-header">
-                        <h2 class="h4">経歴</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-content">
-                        <table class="table">
-                            <tr>
-                                <td>情報系の専門学校（HAL東京）を卒業</td>
-                            </tr>
-                            <tr>
-                                <td>3年くらいNPO向けのITシステムを受託開発</td>
-                            </tr>
-                            <tr>
-                                <td>2019年4月〜 フリーランスで活動中</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="text-block">
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-header">
-                        <h2 class="h4">スキル</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-11 col-md-8 text-block-content">
-                        <p class="h5">プログラミング</p>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>PHP</td>
-                                    <td>主にLaravel</td>
-                                    <td><span class="from2015"></span>年くらい</td>
-                                </tr>
-                                <tr>
-                                    <td rowspan="2">JavaScript</td>
-                                    <td>React.js</td>
-                                    <td><span class="from2017"></span>年くらい</td>
-                                </tr>
-                                <tr>
-                                    <td>Vue.js</td>
-                                    <td>2年くらい</td>
-                                </tr>
-                                <tr>
-                                    <td>Python</td>
-                                    <td>Djangoしか使ったことないです</td>
-                                    <td><span class="from2020"></span>年くらい</td>
-                                </tr>
-                                <tr>
-                                    <td>Go</td>
-                                    <td>WEBとアプリのサーバーサイド</td>
-                                    <td>2年くらい</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-11 col-md-8 text-block-content">
-                        <p class="h5">ツール系</p>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>Google Analytics（GTM）</td>
-                                    <td>仮想PVやクロスドメイン集計など。GA4は勉強中です。</td>
-                                </tr>
-                                <tr>
-                                    <td>決済サービスとの連携</td>
-                                    <td>
-                                        ECサイトや寄付フォームの作成<br>
-                                        Stripe / GMO PG / Omise / Robot Payment / 決済ステーション
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>WordPress</td>
-                                    <td colspan="2">テーマの作成できますが、デザインはできません。</td>
-                                </tr>
-                                <tr>
-                                    <td>Wix</td>
-                                    <td colspan="2">最近は簡単なサイトであればWixで作ってます。</td>
-                                </tr>
-                                <tr>
-                                    <td>cybozu kintone</td>
-                                    <td>JavaScriptやREST APIを使ったカスタマイズ</td>
-                                </tr>
-                                <tr>
-                                    <td>Salesforce</td>
-                                    <td>Apex / Visualforceの開発</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-11 col-md-8 text-block-content">
-                        <p class="h5">その他</p>
-                        <p>WEBサイトに関わることなら幅広く対応可能です。</p>
-                    </div>
-                </div>
-                <div class="text-block">
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-header">
-                            <h2 class="h4">お問い合わせ</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-content">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9QwBUFNOFtLTtvyKqWCvH-xPSAgrU2AEkvW6RF9JEjHDk-Q/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-block">
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-header">
-                            <h2 class="h4">近藤の最新情報はこちらから！</h2>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-content">
-                            <div class="row text-center">
-                                <div class="col-4 h5 sns-icon accent-color">
-                                    <a href="https://www.facebook.com/profile.php?id=100007483848230">
-                                        <i class="fab fa-facebook-square fa-4x"></i><br>
-                                        Facebook
-                                    </a>
+            <!-- スキル -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">スキル</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <p class="section-note mb-4">使うことが多い言語をピックアップしています。</p>
+                            <div class="skill-grid">
+                                <div class="skill-card">
+                                    <span class="skill-lang-icon" aria-hidden="true"><i class="fab fa-php"></i></span>
+                                    <div class="skill-card__meta">
+                                        <span class="skill-card__name">PHP</span>
+                                        <div class="stars" aria-label="熟練度5段階中5">★★★★★</div>
+                                    </div>
                                 </div>
-                                <div class="col-4 h5 sns-icon accent-color">
-                                    <a href="https://twitter.com/japaan_jp">
-                                        <i class="fab fa-twitter-square fa-4x"></i><br>
-                                        Twitter
-                                    </a>
+                                <div class="skill-card">
+                                    <span class="skill-lang-icon" aria-hidden="true"><i
+                                            class="fab fa-js-square"></i></span>
+                                    <div class="skill-card__meta">
+                                        <span class="skill-card__name">JavaScript</span>
+                                        <div class="stars" aria-label="熟練度5段階中4">★★★★☆</div>
+                                    </div>
                                 </div>
-                                <div class="col-4 h5 sns-icon accent-color">
-                                    <a href="https://github.com/conn-do">
-                                        <i class="fab fa-github-square fa-4x"></i><br>
-                                        GitHub
-                                    </a>
+                                <div class="skill-card">
+                                    <span class="skill-lang-icon" aria-hidden="true"><i
+                                            class="fab fa-python"></i></span>
+                                    <div class="skill-card__meta">
+                                        <span class="skill-card__name">Python</span>
+                                        <div class="stars" aria-label="熟練度5段階中3">★★★☆☆</div>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <span class="skill-lang-icon" aria-hidden="true"><i
+                                            class="fab fa-golang"></i></span>
+                                    <div class="skill-card__meta">
+                                        <span class="skill-card__name">Go</span>
+                                        <div class="stars" aria-label="熟練度5段階中2">★★☆☆☆</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-11 col-md-8 text-block-content">
-                            <p class="h5">Twitterの様子</p>
-                            <a class="twitter-timeline" data-height="500" data-link-color="#FAB81E"ß href="https://twitter.com/japaan_jp?ref_src=twsrc%5Etfw">Tweets by japaan_jp</a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="text-block">
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-header">
-                            <h2 class="h4">japaan.jpについて</h2>
+            </div>
+
+            <!-- 主なプロジェクト -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">主なプロジェクト</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <p class="projects-lead mb-3">要件整理から実装・改善まで、現場課題に寄り添って開発します。</p>
+                            <div class="project-grid">
+                                <article class="project-item">
+                                    <h3 class="project-item__title">NPO法人向けWEBサイト保守</h3>
+                                    <p class="project-item__stack mb-0">PHP / Google Analytics / GTM / Salesforce</p>
+                                </article>
+                                <article class="project-item">
+                                    <h3 class="project-item__title">マッチングサービス開発</h3>
+                                    <p class="project-item__stack mb-0">Laravel</p>
+                                </article>
+                                <article class="project-item">
+                                    <h3 class="project-item__title">ホテル予約サイト開発</h3>
+                                    <p class="project-item__stack mb-0">Next.js / Django</p>
+                                </article>
+                                <article class="project-item">
+                                    <h3 class="project-item__title">プログラミング教育</h3>
+                                    <p class="project-item__stack mb-0">PHP / JavaScript / Python</p>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-11 col-md-8 text-block-content">
-                            <p>
-                                <a href="https://github.com/conn-do/japaan.jp-v3">
-                                    <i class="fab fa-github-square fa-lg"></i>
-                                    GitHubでソースコード公開中！（誰得）
+                    </article>
+                </div>
+            </div>
+
+            <!-- 過去に使用したツール抜粋 -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">過去に使用したツール抜粋</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <p class="projects-lead mb-3">案件ごとに最適な構成を選びながら、運用しやすい形で活用します。</p>
+                            <div class="tool-grid" role="list">
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i
+                                            class="fab fa-google"></i></span>
+                                    <span class="tool-item__label">Google Analytics</span>
+                                </div>
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i class="fas fa-tags"></i></span>
+                                    <span class="tool-item__label">Google Tag Manager</span>
+                                </div>
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i
+                                            class="fab fa-salesforce"></i></span>
+                                    <span class="tool-item__label">Salesforce</span>
+                                </div>
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i
+                                            class="fas fa-database"></i></span>
+                                    <span class="tool-item__label">cybozu kintone</span>
+                                </div>
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i
+                                            class="fab fa-wordpress"></i></span>
+                                    <span class="tool-item__label">WordPress</span>
+                                </div>
+                                <div class="tool-item" role="listitem">
+                                    <span class="tool-item__icon" aria-hidden="true"><i
+                                            class="far fa-credit-card"></i></span>
+                                    <span class="tool-item__label">決済関連</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- 経歴 -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">経歴</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <ul class="career-list mb-4">
+                                <li class="career-item">
+                                    <span class="career-item__period">2016年3月</span>
+                                    <span class="career-item__text">情報系の専門学校（HAL東京）を卒業</span>
+                                </li>
+                                <li class="career-item">
+                                    <span class="career-item__period">2016年4月〜2019年3月</span>
+                                    <span class="career-item__text">システム開発会社に勤務</span>
+                                </li>
+                                <li class="career-item">
+                                    <span class="career-item__period">2019年4月〜</span>
+                                    <span class="career-item__text">フリーランスで活動中</span>
+                                </li>
+                                <li class="career-item">
+                                    <span class="career-item__period">2020年4月〜</span>
+                                    <span class="career-item__text">専門学校で非常勤講師</span>
+                                </li>
+                            </ul>
+                            <img src="/img/teacher.jpg" alt="専門学校での講義の様子" width="1536" height="1024"
+                                class="img-fluid career-photo" decoding="async" loading="lazy">
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- お問い合わせ -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">お問い合わせ</h2>
+                        </header>
+                        <div class="section-card__body section-card__body--flush">
+                            <iframe class="contact-iframe" title="お問い合わせフォーム"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSd9QwBUFNOFtLTtvyKqWCvH-xPSAgrU2AEkvW6RF9JEjHDk-Q/viewform?embedded=true"
+                                width="100%" height="700" frameborder="0" marginheight="0"
+                                marginwidth="0">読み込んでいます…</iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- SNS -->
+            <div class="row justify-content-center text-block">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">SNS</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <div class="sns-grid">
+                                <a class="sns-tile" href="https://www.facebook.com/profile.php?id=100007483848230">
+                                    <span class="sns-tile__icon-wrap"><i class="fab fa-facebook fa-2x sns-tile__icon"
+                                            aria-hidden="true"></i></span>
+                                    <span class="sns-tile__label">Facebook</span>
+                                </a>
+                                <a class="sns-tile" href="https://twitter.com/japaan_jp">
+                                    <span class="sns-tile__icon-wrap"><i class="fab fa-x-twitter fa-2x sns-tile__icon"
+                                            aria-hidden="true"></i></span>
+                                    <span class="sns-tile__label">X</span>
+                                </a>
+                                <a class="sns-tile" href="https://github.com/conn-do">
+                                    <span class="sns-tile__icon-wrap"><i class="fab fa-github fa-2x sns-tile__icon"
+                                            aria-hidden="true"></i></span>
+                                    <span class="sns-tile__label">GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Japaan.jpの変遷 -->
+            <div class="row justify-content-center text-block text-block--last">
+                <div class="col-11 col-lg-10">
+                    <article class="section-card">
+                        <header class="section-card__head">
+                            <h2 class="section-card__title">Japaan.jpの変遷</h2>
+                        </header>
+                        <div class="section-card__body">
+                            <p class="mb-3">
+                                <a class="github-source-btn" href="https://github.com/conn-do/japaan.jp"
+                                    target="_blank">
+                                    <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+                                    GitHubでソースコード公開中！
                                 </a>
                             </p>
-                            <p>学生の頃にドメイン取ってから<span class="from2014"></span>年くらい運営しているみたいです。</p>
-                            <div class="row">
-                                <div class="col-12 col-md-6 japaan-jp-img-wrap">
-                                    バージョン1<br>
-                                    <a href="/img/japaan-jp-v1.jpg" data-lightbox="japaan-jp" data-title="japaan.jp バージョン1">
-                                        <img src="/img/japaan-jp-v1-thumb.png" alt="japaan.jp v1" class="img-thumbnail">
-                                    </a>
-                                </div>
-                                <div class="col-12 col-md-6 japaan-jp-img-wrap">
-                                    バージョン2<br>
-                                    <a href="/img/japaan-jp-v2.png" data-lightbox="japaan-jp" data-title="japaan.jp バージョン2">
-                                        <img src="/img/japaan-jp-v2-thumb.png" alt="japaan.jp v2" class="img-thumbnail">
-                                    </a>
-                                </div>
-                            </div>
+                            <ul class="timeline">
+                                <li class="timeline-item">
+                                    <div class="timeline-year">2014年</div>
+                                    <div class="timeline-body">ドメイン取得</div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-year">2015年</div>
+                                    <div class="timeline-body">v1</div>
+                                    <div class="timeline-thumb japaan-jp-img-wrap">
+                                        <a href="/img/japaan-jp-v1.jpg" data-lightbox="japaan-jp"
+                                            data-title="japaan.jp バージョン1（2025）">
+                                            <img src="/img/japaan-jp-v1-thumb.png" alt="japaan.jp v1"
+                                                class="timeline-img">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-year">2019年</div>
+                                    <div class="timeline-body">v2</div>
+                                    <div class="timeline-thumb japaan-jp-img-wrap">
+                                        <a href="/img/japaan-jp-v2.png" data-lightbox="japaan-jp"
+                                            data-title="japaan.jp バージョン2（2026）">
+                                            <img src="/img/japaan-jp-v2-thumb.png" alt="japaan.jp v2"
+                                                class="timeline-img">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-year">2022年</div>
+                                    <div class="timeline-body">v3</div>
+                                    <div class="timeline-thumb japaan-jp-img-wrap">
+                                        <a href="/img/japaan-jp-v3.png" data-lightbox="japaan-jp"
+                                            data-title="japaan.jp バージョン3（2022）">
+                                            <img src="/img/japaan-jp-v3-thumb.png" alt="japaan.jp v3"
+                                                class="timeline-img">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-year">2026年</div>
+                                    <div class="timeline-body">v4（現在）</div>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-wrap accent-color">
+    </main>
+
+    <footer class="site-footer accent-bar">
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-12">
+                <div class="col-sm-12 site-footer__inner">
                     最後まで見ていただきありがとうございます。
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -271,13 +416,16 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.2/build/global/luxon.min.js"></script>
-
-    <script src="/js/script.js"></script>
 </body>
+
 </html>
