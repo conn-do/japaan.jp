@@ -318,6 +318,26 @@ a:visited {
     box-shadow: 0 16px 32px rgba(52, 86, 139, 0.12);
 }
 
+.hero-portrait {
+    display: block;
+    aspect-ratio: 3 / 4;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 16px 32px rgba(52, 86, 139, 0.12);
+    object-fit: cover;
+}
+
+.career-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 8px 22px rgba(52, 86, 139, 0.14);
+}
+
 .img-placeholder--wide {
     min-height: 200px;
     border-radius: var(--radius-md);
