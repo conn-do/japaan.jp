@@ -124,6 +124,358 @@ a:visited {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
+/* 無機質な幾何オブジェクト（ヒーロー背景） */
+.site-hero__geos {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-geo {
+    position: absolute;
+    opacity: 0.3;
+    box-sizing: border-box;
+}
+
+.hero-geo--square {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(42, 61, 87, 0.35);
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 3px;
+}
+
+.hero-geo--square-sm {
+    width: 12px;
+    height: 12px;
+}
+
+.hero-geo--ring {
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(42, 61, 87, 0.3);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.hero-geo--ring-sm {
+    width: 18px;
+    height: 18px;
+}
+
+.hero-geo--tri {
+    width: 20px;
+    height: 20px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background: rgba(238, 137, 136, 0.22);
+    border: none;
+}
+
+.hero-geo--dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background: rgba(42, 61, 87, 0.4);
+    border: none;
+}
+
+.hero-geo--p1 {
+    top: 14%;
+    left: 9%;
+}
+
+.hero-geo--p2 {
+    top: 68%;
+    left: 88%;
+}
+
+.hero-geo--p3 {
+    top: 42%;
+    left: 4%;
+}
+
+.hero-geo--p4 {
+    top: 22%;
+    left: 72%;
+}
+
+.hero-geo--p5 {
+    top: 82%;
+    left: 18%;
+}
+
+.hero-geo--p6 {
+    top: 10%;
+    left: 52%;
+}
+
+.hero-geo--p7 {
+    top: 58%;
+    left: 58%;
+}
+
+.hero-geo--p8 {
+    top: 36%;
+    left: 38%;
+}
+
+.hero-geo--p9 {
+    top: 6%;
+    left: 28%;
+}
+
+.hero-geo--p10 {
+    top: 16%;
+    left: 94%;
+}
+
+.hero-geo--p11 {
+    top: 50%;
+    left: 20%;
+}
+
+.hero-geo--p12 {
+    top: 54%;
+    left: 80%;
+}
+
+.hero-geo--p13 {
+    top: 90%;
+    left: 44%;
+}
+
+.hero-geo--p14 {
+    top: 72%;
+    left: 7%;
+}
+
+.hero-geo--p15 {
+    top: 28%;
+    left: 16%;
+}
+
+.hero-geo--p16 {
+    top: 64%;
+    left: 91%;
+}
+
+.hero-geo--p17 {
+    top: 8%;
+    left: 78%;
+}
+
+.hero-geo--p18 {
+    top: 44%;
+    left: 11%;
+}
+
+.hero-geo--p19 {
+    top: 84%;
+    left: 68%;
+}
+
+.hero-geo--p20 {
+    top: 62%;
+    left: 34%;
+}
+
+.hero-geo--p21 {
+    top: 3%;
+    left: 64%;
+}
+
+.hero-geo--p22 {
+    top: 96%;
+    left: 36%;
+}
+
+.hero-geo--p23 {
+    top: 24%;
+    left: 2%;
+}
+
+.hero-geo--p24 {
+    top: 71%;
+    left: 13%;
+}
+
+.hero-geo--p25 {
+    top: 12%;
+    left: 96%;
+}
+
+.hero-geo--p26 {
+    top: 88%;
+    left: 56%;
+}
+
+.hero-geo--p27 {
+    top: 33%;
+    left: 89%;
+}
+
+.hero-geo--p28 {
+    top: 58%;
+    left: 3%;
+}
+
+.hero-geo--p29 {
+    top: 47%;
+    left: 97%;
+}
+
+.hero-geo--p30 {
+    top: 95%;
+    left: 78%;
+}
+
+.hero-geo--p35 {
+    top: 74%;
+    left: 26%;
+}
+
+.hero-geo--p38 {
+    top: 46%;
+    left: 7%;
+}
+
+.hero-geo--p41 {
+    top: 86%;
+    left: 39%;
+}
+
+.hero-geo--delay {
+    animation-delay: -9s;
+}
+
+.hero-geo--delay-sm {
+    animation-delay: -4s;
+}
+
+.hero-geo--delay-md {
+    animation-delay: -12s;
+}
+
+.hero-geo--delay-lg {
+    animation-delay: -16s;
+}
+
+.hero-geo--delay-xl {
+    animation-delay: -22s;
+}
+
+.hero-geo--delay-xxl {
+    animation-delay: -28s;
+}
+
+.hero-geo--rev {
+    animation-direction: reverse;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-geo {
+        will-change: transform;
+    }
+
+    .hero-geo--track-a {
+        animation: hero-geo-drift-a 32s linear infinite;
+    }
+
+    .hero-geo--track-b {
+        animation: hero-geo-drift-b 38s linear infinite;
+    }
+
+    .hero-geo--track-c {
+        animation: hero-geo-drift-c 29s linear infinite;
+    }
+
+    .hero-geo--track-d {
+        animation: hero-geo-drift-d 35s linear infinite;
+    }
+}
+
+@keyframes hero-geo-drift-a {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 0.22;
+    }
+    25% {
+        transform: translate3d(18vw, -14vh, 0) rotate(95deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate3d(32vw, 6vh, 0) rotate(190deg);
+        opacity: 0.28;
+    }
+    75% {
+        transform: translate3d(8vw, 16vh, 0) rotate(280deg);
+        opacity: 0.36;
+    }
+}
+
+@keyframes hero-geo-drift-b {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 0.2;
+    }
+    25% {
+        transform: translate3d(-16vw, 10vh, 0) rotate(-88deg);
+        opacity: 0.38;
+    }
+    50% {
+        transform: translate3d(-28vw, -8vh, 0) rotate(-190deg);
+        opacity: 0.3;
+    }
+    75% {
+        transform: translate3d(-6vw, -18vh, 0) rotate(-275deg);
+        opacity: 0.34;
+    }
+}
+
+@keyframes hero-geo-drift-c {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 0.24;
+    }
+    20% {
+        transform: translate3d(22vw, 12vh, 0) rotate(72deg);
+        opacity: 0.42;
+    }
+    55% {
+        transform: translate3d(10vw, -20vh, 0) rotate(200deg);
+        opacity: 0.26;
+    }
+    80% {
+        transform: translate3d(-12vw, -6vh, 0) rotate(300deg);
+        opacity: 0.36;
+    }
+}
+
+@keyframes hero-geo-drift-d {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        opacity: 0.22;
+    }
+    30% {
+        transform: translate3d(-14vw, -16vh, 0) rotate(-105deg);
+        opacity: 0.4;
+    }
+    60% {
+        transform: translate3d(20vw, -4vh, 0) rotate(-220deg);
+        opacity: 0.3;
+    }
+    85% {
+        transform: translate3d(6vw, 14vh, 0) rotate(-320deg);
+        opacity: 0.35;
+    }
+}
+
 .site-hero__blob {
     position: absolute;
     border-radius: 50%;
@@ -148,6 +500,34 @@ a:visited {
     background: radial-gradient(circle, rgba(100, 140, 255, 0.18) 0%, transparent 70%);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .site-hero__blob--1 {
+        animation: hero-blob-drift-a 20s ease-in-out infinite alternate;
+    }
+
+    .site-hero__blob--2 {
+        animation: hero-blob-drift-b 26s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes hero-blob-drift-a {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(-28px, 20px) scale(1.06);
+    }
+}
+
+@keyframes hero-blob-drift-b {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        transform: translate(22px, -18px) scale(1.05);
+    }
+}
+
 .site-hero__content {
     position: relative;
     z-index: 1;
@@ -167,10 +547,80 @@ a:visited {
     font-weight: 800;
     letter-spacing: 0.08em;
     line-height: 1.2;
-    background: linear-gradient(135deg, #2a3d57 0%, #4f6482 100%);
+    background: linear-gradient(
+        100deg,
+        #152232 0%,
+        #2a3d52 28%,
+        #334a62 50%,
+        #2a3d52 72%,
+        #152232 100%
+    );
+    background-size: 200% 100%;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* ファーストビュー：入場（Byteflare系LPのような段階表示） */
+.fv-reveal {
+    opacity: 0;
+    transform: translate3d(0, 1.35rem, 0);
+    filter: blur(4px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fv-reveal {
+        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        animation-delay: var(--fv-delay, 0s);
+    }
+
+    .site-hero__title.fv-reveal {
+        animation: fv-fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+            hero-title-shine 14s ease-in-out infinite;
+        animation-delay: var(--fv-delay, 0s), 0s;
+    }
+}
+
+@keyframes fv-fade-up {
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
+    }
+}
+
+@keyframes hero-title-shine {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fv-reveal {
+        opacity: 1;
+        transform: none;
+        filter: none;
+        animation: none;
+    }
+
+    .site-hero__title {
+        background-size: 100% 100%;
+    }
+
+    .site-hero__blob--1,
+    .site-hero__blob--2 {
+        animation: none;
+    }
+
+    .hero-geo {
+        animation: none !important;
+        opacity: 0.18;
+        will-change: auto;
+    }
 }
 
 .site-hero__lead {
